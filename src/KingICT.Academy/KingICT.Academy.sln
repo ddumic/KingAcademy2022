@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KingICT.Academy.WebApi", "KingICT.Academy.WebApi\KingICT.Academy.WebApi.csproj", "{32D8A1C0-D6D2-4C7D-8506-4DB695BC23F1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KingICT.Academy.Contract", "KingICT.Academy.Contract\KingICT.Academy.Contract.csproj", "{A41385EE-716D-406B-A069-00F8D584D4EA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KingICT.Academy.Service", "KingICT.Academy.Service\KingICT.Academy.Service.csproj", "{BAC49A13-E6EF-4959-9541-C36C7CC203A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingICT.Academy.Model", "KingICT.Academy.Model\KingICT.Academy.Model.csproj", "{3B1F3831-C090-41A3-AD09-8CF4B056D7D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingICT.Academy.Repository", "KingICT.Academy.Repository\KingICT.Academy.Repository.csproj", "{9E2A21AC-C483-4326-9041-8BD806B3C315}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingICT.Academy.Configuration", "KingICT.Academy.Configuration\KingICT.Academy.Configuration.csproj", "{9ECBB9CA-83E3-49F3-A631-15911AD113F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32D8A1C0-D6D2-4C7D-8506-4DB695BC23F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32D8A1C0-D6D2-4C7D-8506-4DB695BC23F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32D8A1C0-D6D2-4C7D-8506-4DB695BC23F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32D8A1C0-D6D2-4C7D-8506-4DB695BC23F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A41385EE-716D-406B-A069-00F8D584D4EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A41385EE-716D-406B-A069-00F8D584D4EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A41385EE-716D-406B-A069-00F8D584D4EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A41385EE-716D-406B-A069-00F8D584D4EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAC49A13-E6EF-4959-9541-C36C7CC203A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAC49A13-E6EF-4959-9541-C36C7CC203A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAC49A13-E6EF-4959-9541-C36C7CC203A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAC49A13-E6EF-4959-9541-C36C7CC203A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B1F3831-C090-41A3-AD09-8CF4B056D7D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B1F3831-C090-41A3-AD09-8CF4B056D7D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B1F3831-C090-41A3-AD09-8CF4B056D7D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B1F3831-C090-41A3-AD09-8CF4B056D7D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E2A21AC-C483-4326-9041-8BD806B3C315}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E2A21AC-C483-4326-9041-8BD806B3C315}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E2A21AC-C483-4326-9041-8BD806B3C315}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E2A21AC-C483-4326-9041-8BD806B3C315}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ECBB9CA-83E3-49F3-A631-15911AD113F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ECBB9CA-83E3-49F3-A631-15911AD113F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ECBB9CA-83E3-49F3-A631-15911AD113F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ECBB9CA-83E3-49F3-A631-15911AD113F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E55D338-F0A8-4E30-A4F1-31A4D231BE99}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KingICT.Academy.Contract\KingICT.Academy.Contract.csproj" />
+    <ProjectReference Include="..\KingICT.Academy.Model\KingICT.Academy.Model.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KingICT.Academy.Configuration\KingICT.Academy.Configuration.csproj" />
+    <ProjectReference Include="..\KingICT.Academy.Contract\KingICT.Academy.Contract.csproj" />
+    <ProjectReference Include="..\KingICT.Academy.Repository\KingICT.Academy.Repository.csproj" />
+    <ProjectReference Include="..\KingICT.Academy.Service\KingICT.Academy.Service.csproj" />
+  </ItemGroup>
+
+</Project>
