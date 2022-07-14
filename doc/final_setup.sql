@@ -24,4 +24,4 @@ CREATE TABLE Project (
 )
 
 
-ALTER TABLE Student ADD ProjectId int FOREIGN KEY REFERENCES Student(Id)
+ALTER TABLE Student ADD ProjectId int FOREIGN KEY REFERENCES Project(Id)
