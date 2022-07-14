@@ -20,34 +20,34 @@ namespace KingICT.Academy.WebApi.Controllers
 		}
 
 		[HttpGet("{id}")]
-		public async Task<IActionResult> GetStudentById(int id)
+		public async Task<IActionResult> GetStudentById([FromRoute] int id)
 		{
 			return Ok(await _studentService.GetStudentByIdAsync(id));
 		}
 
 		[HttpPost]
-		public async Task<IActionResult> CreateStudent(StudentDto student)
+		public async Task<IActionResult> CreateStudent([FromBody] StudentDto student)
 		{
 			return Ok(await _studentService.CreateStudentAsync(student));
 		}
 
 		[HttpDelete("{id}")]
-		public async Task<IActionResult> DeleteStudent(int id)
+		public async Task<IActionResult> DeleteStudent([FromRoute] int id)
 		{
 			await _studentService.DeleteStudentAsync(id);
 
 			return Ok();
 		}
 
-		[HttpPatch("{id}")]
-		public async Task<IActionResult> UpdateStudent(int id, StudentDto student)
+		[HttpPut("{id}")]
+		public async Task<IActionResult> UpdateStudent([FromRoute] int id, [FromBody] StudentDto student)
 		{
 			if (id != student.Id)
 			{
 				throw new ArgumentException(nameof(id));
 			}
 
-			return Ok(_studentService.UpdateStudentAsync(student));
+			return Ok(await _studentService.UpdateStudentAsync(student));
 		}
 	}
 }

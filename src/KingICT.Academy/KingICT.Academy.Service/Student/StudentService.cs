@@ -55,20 +55,13 @@ namespace KingICT.Academy.Service.Student
 		{
 			var s = await _studentRepository.GetStudentByIdAsync(student.Id);
 
-			//if (s is null)
-			//{
-			//	throw new ArgumentException(nameof(student.Id));
-			//}
+			if (s is null)
+			{
+				throw new ArgumentException(nameof(student.Id));
+			}
 
-			//if (!string.IsNullOrWhiteSpace(student.FirstName))
-			//{
-			//	s.SetFirstName(student.FirstName);
-			//}
-
-			//if (!string.IsNullOrWhiteSpace(student.LastName))
-			//{
-			//	s.SetLastName(student.LastName);
-			//}
+			s.SetFirstName(student.FirstName);
+			s.SetLastName(student.LastName);
 
 			var updatedStudent = await _studentRepository.UpdateStudentAsync(s);
 
