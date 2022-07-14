@@ -6,6 +6,8 @@ namespace KingICT.Academy.Repository.Common
 	{
 		public virtual DbSet<Model.Academy.Academy> Academies { get; set; }
 
+		public virtual DbSet<Model.Student.Student> Students { get; set; }
+
 
 		public AcademyDbContext(DbContextOptions<AcademyDbContext> options)
 			: base(options)

@@ -4,14 +4,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace KingICT.Academy.Repository.Academy
 {
-	public class AcademyRepository : IAcademyRepository
+	public class AcademyRepository : RepositoryBase, IAcademyRepository
 	{
-		private readonly AcademyDbContext _dbContext;
-
 		public AcademyRepository(AcademyDbContext dbContext)
-		{
-			_dbContext = dbContext;
-		}
+			:base(dbContext)
+		{}
 
 		public async Task<Model.Academy.Academy> GetAcademyByIdAsync(int id)
 		{

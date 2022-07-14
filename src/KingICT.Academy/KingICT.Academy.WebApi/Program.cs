@@ -1,9 +1,13 @@
 using KingICT.Academy.Configuration;
 using KingICT.Academy.Contract.Academy;
+using KingICT.Academy.Contract.Student;
 using KingICT.Academy.Model.Academy;
+using KingICT.Academy.Model.Student;
 using KingICT.Academy.Repository.Academy;
 using KingICT.Academy.Repository.Common;
+using KingICT.Academy.Repository.Student;
 using KingICT.Academy.Service.Academy;
+using KingICT.Academy.Service.Student;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -23,8 +27,10 @@ builder.Services.AddApiVersioning(options =>
 
 builder.Services.AddControllers();
 
+builder.Services.AddTransient<IStudentService, StudentService>();
 builder.Services.AddTransient<IAcademyService, AcademyService>();
 builder.Services.AddTransient<IAcademyRepository, AcademyRepository>();
+builder.Services.AddTransient<IStudentRepository, StudentRepository>();
 
 var dbConfig = builder.Configuration.GetSection(nameof(DatabaseConfiguration)).Get<DatabaseConfiguration>();
 
