@@ -17,3 +17,11 @@ CREATE TABLE [dbo].[Student] (
     FirstName varchar(255),
 	LastName varchar(255)
 );
+
+CREATE TABLE Project (
+	Id int IDENTITY(1,1) PRIMARY KEY,
+	Name varchar(100)
+)
+
+
+ALTER TABLE Student ADD ProjectId int FOREIGN KEY REFERENCES Student(Id)

@@ -8,6 +8,8 @@ namespace KingICT.Academy.Repository.Common
 
 		public virtual DbSet<Model.Student.Student> Students { get; set; }
 
+		public virtual DbSet<Model.Project.Project> Projects { get; set; }
+
 
 		public AcademyDbContext(DbContextOptions<AcademyDbContext> options)
 			: base(options)

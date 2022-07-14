@@ -10,6 +10,15 @@ namespace KingICT.Academy.Repository.ModelBuilders
 			builder
 				.ToTable("Student", "dbo")
 				.HasKey(e => e.Id);
+
+			builder
+				.Property(e => e.ProjectId)
+				.IsRequired(false);
+
+			builder
+				.HasOne(e => e.Project)
+				.WithMany(e => e.Students)
+				.HasForeignKey(e => e.ProjectId);
 		}
 	}
 }

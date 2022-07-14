@@ -8,6 +8,10 @@
 
 		public string LastName { get; private set; }
 
+		public int? ProjectId { get; private set; }
+
+		public virtual Project.Project Project { get; private set; }
+
 
 		public void SetId(int id)
 		{

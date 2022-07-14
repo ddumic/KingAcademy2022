@@ -7,12 +7,12 @@ namespace KingICT.Academy.Repository.Academy
 	public class AcademyRepository : RepositoryBase, IAcademyRepository
 	{
 		public AcademyRepository(AcademyDbContext dbContext)
-			:base(dbContext)
-		{}
+			: base(dbContext)
+		{ }
 
 		public async Task<Model.Academy.Academy> GetAcademyByIdAsync(int id)
 		{
-			return await _dbContext.Academies.FirstOrDefaultAsync(a => a.Id == id);
+			return await _dbContext.Academies.FirstOrDefaultAsync(x => x.Id == id);
 		}
 	}
 }

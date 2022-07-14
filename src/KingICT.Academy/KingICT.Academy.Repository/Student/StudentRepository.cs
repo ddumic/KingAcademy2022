@@ -12,7 +12,7 @@ namespace KingICT.Academy.Repository.Student
 
 		public async Task<Model.Student.Student> GetStudentByIdAsync(int id)
 		{
-			return await _dbContext.Students.FirstOrDefaultAsync(a => a.Id == id);
+			return await _dbContext.Students.FirstOrDefaultAsync(x => x.Id == id);
 		}
 
 		public async Task<int> CreateStudentAsync(Model.Student.Student student)
@@ -32,7 +32,6 @@ namespace KingICT.Academy.Repository.Student
 		public async Task<Model.Student.Student> UpdateStudentAsync(Model.Student.Student student)
 		{
 			_dbContext.Students.Update(student);
-			//_dbContext.Update(student);
 			await _dbContext.SaveChangesAsync();
 
 			return student;
